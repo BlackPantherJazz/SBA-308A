@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Vault</title>
+</head>
+<body>
+    <header>
+        <h1>Hero Vault</h1>
+        <p class = "subtitle">700+ heroes and villians from every universe</p>   
+    </header>
+
+    <main>
+        <section class = "controls">
+            <input 
+                type="text">
+                id= "search-input"
+                placeholder= "Search Heroes..."
+            >
+            <div class = "filters">
+                <select id="publisher-filter">
+                    <option value="all">All Publishers</option>
+                    <option value="Marvel Comics">Marvel</option>
+                    <option value="DC Comics">DC</option>
+                </select>
+            </div>    
+        </section>
+
+        <section id="hero-grid" class="hero-grid">  
+        </section>
+
+        <section id="hero-detail" class="hero-detail hidden">    
+        </section>
+    </main>
+
+    <footer>
+        <p>Powered by Superhero API</p>
+    </footer>
+
+    <script type ="module" src="js/app.jsh"></script>
+    
+</body>
+</html>
