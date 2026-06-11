@@ -1,44 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hero Vault</title>
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <header>
-        <h1>Hero Vault</h1>
-        <p class = "subtitle">Heroes and Villians from every universe</p>   
+      <h1>Hero Vault</h1>
+      <p class="subtitle">Heroes and Villians from every universe</p>
     </header>
 
     <main>
-        <section class = "controls">
-            <input 
-                type="text"
-                id= "search-input"
-                placeholder= "Search Heroes..."
-            >
-            <div class = "filters">
-                <select id="publisher-filter">
-                    <option value="all">All Publishers</option>
-                    <option value="Marvel Comics">Marvel</option>
-                    <option value="DC Comics">DC</option>
-                </select>
-            </div>    
-        </section>
+      <section class="controls">
+        <input type="text" id="search-input" placeholder="Search Heroes..." />
+        <div class="filters">
+          <select id="publisher-filter">
+            <option value="all">All Publishers</option>
+            <option value="Marvel Comics">Marvel</option>
+            <option value="DC Comics">DC</option>
+          </select>
+          <select id="alignment-filter">
+            <option value="all">All Alignments</option>
+            <option value="good">Heroes</option>
+            <option value="bad">Villains</option>
+            <option value="neutral">Neutral</option>
+          </select>
+        </div>
+      </section>
 
-        <section id="hero-grid" class="hero-grid">  
-        </section>
+      <section id="hero-grid" class="hero-grid"></section>
 
-        <section id="hero-detail" class="hero-detail hidden">    
-        </section>
+      <section id="hero-detail" class="hero-detail hidden"></section>
     </main>
 
     <footer>
-        <p>Powered by Superhero API</p>
+      <p>Powered by Superhero API</p>
     </footer>
 
-    <script type ="module" src="js/app.jsh"></script>
-    
-</body>
+    <script type="module" src="js/app.js"></script>
+  </body>
 </html>
